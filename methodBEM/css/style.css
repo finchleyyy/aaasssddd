@@ -344,6 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 .present-page2 {
   position: relative;
   height: 100vh;
+  background-color: #F3F3F3;
 }
 .present-page2__titletwise {
   position: absolute;
@@ -375,4 +376,8 @@ h1, h2, h3, h4, h5, h6 {
 .present-page2__button {
   margin-top: 20px;
   padding: 20px 60px;
+}
+
+.all-club {
+  min-height: 100vh;
 }

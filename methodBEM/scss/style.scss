@@ -257,6 +257,7 @@ margin: 68px 0px 0px 5px;
     
     position: relative;
     height: 100vh;
+    background-color: #F3F3F3;
     // background-color:yellowgreen ;
 &__titletwise{
     position: absolute;
@@ -296,6 +297,32 @@ line-height: 27px;
         @extend %button;
         padding: 20px 60px;
     }
+}
+.all-club {
+    min-height: 100vh;
+}
+.set {
+
+		&__card {
+		}
+
+		&__position {
+		}
+
+		&__pic {
+		}
+
+		&__name-place {
+		}
+
+		&__content {
+		}
+
+		&__nuber {
+		}
+
+		&__button {
+		}
 }
 
 
