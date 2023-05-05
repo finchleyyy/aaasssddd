@@ -1,0 +1,15 @@
+{
+    "editor.insertSpaces": true,
+    "terminal.integrated.enableBell": false,
+    "audioCues.volume": 0,
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/methodBEM/css", //Тут важно указать куда будет сохраняться(не знаю только в этом проекте или в целом)
+            // "autoprefix": "last 5 version"
+        }
+    ],
+    "vscodeGoogleTranslate.preferredLanguage": "English"
+}

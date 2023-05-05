@@ -1,0 +1,304 @@
+@import "_zero";
+@import "slaydShow";
+$main-color: #DF0001; //главный цвет
+// !создание шаблонов - записывается как обычный класс, но в начале ставится % (название любое)
+// !далее, чтобы его применить пишем @extend и название шаблона, например:
+%button{ 
+    
+    border: 1px solid $main-color;
+    border-radius: 15px;
+    background-color: $main-color ;
+    padding: 8px 15px;
+    color: white;
+    // --------------
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 19px;
+}
+// шаблон должен ставиться до изменённого кода
+// далее в обычном классе можно эти параметры изменять
+// ! создание миксинов ------------ЕЩЁ РАНО ВСЁ ТАКИ, НУЖНО ОСВОИТЬ ПРЕДЫДУЩЕЕ
+// @mixin
+.wrapper {
+    width: 100%;
+}
+// !нужно заменить картинки соразмерными, настроить их 
+.nav {
+    
+    z-index: 2;
+width: 100%;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+height: 7vh;
+// opacity: 0.6;
+position: fixed;
+display: flex;
+flex-direction: row;
+    &__logopic {
+        position: absolute;
+    left: 12%;
+    top: 15%;
+ 
+    } 
+    &__logoname {
+        position: absolute;
+        left: 15%;
+        // margin: -5px 0px 0px 250px; 
+        top: 45%;
+        display: inline-block;
+        // но лучше сделать отступы к центру через что-то другое
+ 
+    }
+
+    &__vk {
+        position: absolute;
+        left: 45%; 
+        top: 10%;
+        // padding-left: -300px;
+        display: inline-block;
+    }
+
+    &__telegram {
+        left: 48%; 
+        top: 15%;
+       
+        position: absolute;
+    display: inline-block;
+
+    }
+
+    &__number {
+        
+        position: absolute;
+        left: 52%;
+        top: 12%;
+        // -------------
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        }
+
+    &__freetrain {
+@extend %button;
+        position: absolute;
+        left:65%;
+        top: 8%;
+
+    }
+}
+
+
+
+
+
+
+
+
+.first-fullscreen-page {
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/picPAGE/back.jpg);
+    background-position: 0 0;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+color: white;
+}
+.menu {
+    position: absolute;
+// left: 10%;
+margin: 0 10%;
+
+top: 100px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+// оформление
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 18px;
+		&__item {
+            margin: 0 2vw; // ширина, процент от экрана
+            text-decoration: none;
+            color: white;
+            
+		}
+}
+.content-page1 {
+    position: absolute;
+    top: 200px;
+    left: 12vw;
+
+		&__main {
+            // position: absolute;
+            // top: 200px;
+            // margin:0 ;
+            // left: 12vw;
+            width: 60%;
+            margin-bottom: 100px;
+            // -----------------
+            font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+
+            
+		}
+
+		&__secondary {
+            // display: block;
+            // position: absolute;
+            // top: 200px; 
+            // left: 12vw;
+            width: 60%;
+            // ----------------
+            margin-bottom: 100px;
+            font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+		}
+        &__button-choose {
+            @extend %button;
+            // background-color: none;
+            background-color:  rgba(0, 0, 0, 0);
+            border-color: white;
+            margin-right: 20px;
+            border: solid 2px;
+            width: 150px;
+        }
+        &__button-zapis {
+            @extend %button;
+            background-color:  rgba(0, 0, 0, 0);
+            border-color: white;
+            border: solid 2px;
+            width: 150px;
+        }
+}
+.present-page1 {
+    background-color: #F3F3F3;
+    min-height: 100vh;
+    position: relative;
+   
+    display: flex;
+    align-items: center;
+  justify-content: center;
+&__titletwise{
+    position: absolute;
+    width: 76%;
+    top: 20px;
+}
+    &__back-text {
+        // display: inline-block;
+        position: absolute;
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 130px;
+line-height: 116px;
+
+color: rgba(168, 161, 161, 0.53);
+    }
+    &__front-text {
+        position: absolute;
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 39px;
+
+color: #000000;
+margin: 68px 0px 0px 5px;
+
+    }
+
+    &__picture {
+        position: absolute;
+        margin: 0 auto;
+        top: 180px;
+       
+    }
+    &__img{
+        margin: 0 auto;
+        display: block;
+   
+    }
+
+    &__button1 {
+        position: absolute;
+        display: block;
+        top: 520px;
+        @extend %button;
+    }
+
+    &__button2 {
+        position: absolute; 
+        display: block;
+        top: 600px;
+        @extend %button;
+        
+    }
+    &__bottom-line{
+        position: absolute;
+        width: 800px;
+        top: 670px;
+        border-bottom: 1px solid #D1CDCD;
+    }
+}
+
+.present-page2 {
+    
+    position: relative;
+    height: 100vh;
+    // background-color:yellowgreen ;
+&__titletwise{
+    position: absolute;
+    width: 76%;
+    top: 20px;
+    left: 12%;
+}
+    &__content {
+        position: absolute;
+        top: 300px;
+        width: 30%;
+        left: 12%;
+    }
+
+    &__title {
+        // position: absolute;
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 27px;
+margin-bottom: 50px;
+    }
+
+    &__main-content {
+        // position: absolute;
+        // top: 20px;
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 27px;
+    }
+    &__button {
+        // position: absolute;
+        margin-top: 20px;
+        @extend %button;
+        padding: 20px 60px;
+    }
+}
+
+
+
+
+
