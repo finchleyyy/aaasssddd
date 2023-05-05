@@ -1,0 +1,514 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+
+/*полоса прокрутки основная*/
+body::-webkit-scrollbar {
+  width: 12px;               /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+  background: #DCDCDC;        /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:black ;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid #DCDCDC; /* отступ вокруг бегунка */
+}
+/*сайт далее*/
+html,body{
+	height: 100%;
+
+}
+
+.back{
+	background-image: url('../img/back.jpg');
+	height: 3000px;
+}
+
+.wrapper{
+
+/*	width:1400px; */
+        margin:0 auto; //отступы от краев к центру
+min-height: 100vh; 
+display: flex;
+flex-direction: column; //возможно в дальнейшем придётся убрать, по сути просто данные в столбец по порядку
+}
+
+
+
+/* навигация */
+.main_nav{
+	text-align: center;
+	background-color: black ;
+	display: block;
+	border: 1px solid #000;
+	height: 40px;
+	color: white;
+	position: fixed; /* Сделайте его липким/фиксированным */
+  top: -50px; /* Скрыть панель навигации 50 пикселей за пределами верхнего вида */
+  width: 100%; /* Полная ширина */
+  transition: top 0.3s; /* Эффект перехода при скольжении вниз (и вверх) */
+	min-width: 500px;
+	z-index: 5;
+}
+.nav{
+	padding: 10px 0px;
+}
+.nav a{
+	color: white;
+}
+.nav li{
+	display: inline;
+	padding: 0px 40px;
+	/*transition: 1s; 
+  text-align: center; */
+}
+
+.nav li:hover {
+/*  transform: scale(1.4);*/
+}
+/*.nav a{
+	transition: 1s;
+}
+.nav a:hover{
+	transform: scale(1.5);
+}*/
+/*--------------------------*/
+
+.fullscreen{
+	position: relative;
+min-height: 100vh;
+/*можно задать отступы, вроде лучше через падинг для шапки*/
+padding: 0px 0 0 0;
+/*	background-image: url('../img/1back.png'); //нужно будет заменить, не совпадают линии*/
+/*	background-color: lightcyan;*/
+	color: blue;
+	display: flex;
+}
+
+
+.fullscreen_content{
+	position: relative;
+	background-color: white;
+/*	flex: 1 1 auto; // занимает всю ширину*/
+	color: black;
+	width: 1000px;
+	min-width: 600px;
+	margin: 0 auto;
+/*	далеее настройки содержимого текста*/
+text-align: center;
+display: flex;
+flex-direction: column;
+/*justify-content: center; // делает все объекты по центру, скорее всего нужно будет убрать*/
+/**/
+/* finchley */
+
+
+/*
+font-family: 'Love Light';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 90px;
+
+color: #000000;*/
+
+}
+/*работа с самим контентом */
+.fullscreen_img{
+	margin-top: 100px;
+}
+.fullscreen_body{
+
+	font-style: normal;
+font-weight: 400;
+font-size: 30px;
+color: white;
+
+}
+.full_button{
+	margin: 0 auto;
+	display: inline-block;
+border: 1px solid;
+border-radius: 40px;
+padding: 15px 30px ;
+background-color: black;
+width: 400px ;
+margin-bottom:10px;
+/*max-width: 155px;*/
+text-align: center;
+transition: 1s;
+}
+.full_button:hover{
+	transform: scale(1.1);
+}
+
+
+
+
+/*контент отностительно первой страницы*/
+.second_page{
+	
+width: 1000px;
+height: 1500px;
+/*margin: 0 auto;*/
+/*left: auto;*/
+/*right: auto;*/
+/*margin-left: auto;*/
+/*margin-right: auto;*/
+/*padding: 0 auto;*/
+position: absolute;
+top: 1350px;
+background-color: #D9D9D9;
+color: white;
+text-align: center;
+z-index: 1;
+}
+.second_grid{
+	display: grid;
+	grid-template-columns: repeat(20, 50px);
+	grid-template-rows: repeat(30, 50px);
+
+}
+.left-content{
+	position: relative;
+/*	background-color: #D9D9D9;*/
+/*	color: ;*/
+grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 12;
+}
+.left-text{
+	top: 150px;
+	left: 15px;
+	position: absolute;
+	text-align: left;
+	color: black;
+	font-family: 'Inter';
+font-style: normal;
+
+}
+.zagolovok1{
+	display: block;
+	font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+}
+.zagolovok1 p:last-child{
+	margin-bottom: 30px;
+}
+.content-left{
+font-weight: 300;
+font-size: 20px;
+line-height: 145%;	
+}
+.one_picture{
+/*	background-color: ;*/
+/*	background-image: url("../img/content1.png");*/
+/*	width: 50%;*/
+/*	height: auto;*/
+grid-column: 10/21 ;
+grid-row:1/12 ;
+}
+.imagerrr{
+	width: 99%;
+	float: right;
+}
+.two_picture{
+/*	background-color: purple;*/
+grid-column: 1/8;
+grid-row: 12/19;
+}
+.imagerrr2{
+	float: left;
+	width: 97%;
+}
+.right-content{
+	position: relative;
+/*	background-color:#D9D9D9 ;*/
+
+grid-column: 8/21;
+grid-row: 12/19  ;
+}
+.right-text{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	color: black;
+	text-align: right;
+
+}
+.zagolovok2{
+/*	position: absolute;*/
+	display: block;
+	font-weight: 500;
+font-size: 40px;
+line-height: 100%;
+}
+.email{
+	
+	position: absolute;
+	top: 200px;
+	right: 260px;
+	/*margin: 200px 0px;
+	margin-right: 300px;*/
+/*	display: inline;*/
+	width: 300px;
+	height: 50px;
+	font-size: 23px;
+font-weight: 500;
+color: ;
+background-color: #D9D9D9 ;
+/*настройка формы оформление*/
+border-bottom: black 2px solid;
+}
+.subscribe button{
+	position: absolute;
+	top: 200px;
+	right: 30px;
+	display: inline-block;
+	border: black 3px solid;
+	padding: 7px 25px;
+	height: 50px;
+	font-size: 23px;
+font-weight: 530;
+}
+.politic{
+	position: absolute;
+
+	top:270px ;
+	right: 30px;
+	width: 530px;
+	text-align: right;
+	color: black;
+	font-size: 21px;
+	font-weight: 450;
+}
+.footer{
+grid-column:1/25 ;
+grid-row: 19/25;
+color: white;
+background-color: #242424;
+}
+.footer-inf{
+	color: #FFFFFF;
+	position: absolute;
+}
+.footer-inf a{
+text-decoration: none;
+color:  #FFFFFF;
+}
+.footer-inf ul{
+	display: inline-block;
+	padding: 0px 50px;
+vertical-align: top; ..выравнивает по верху
+
+}
+.footer-inf ul:first-child{
+	padding: 0px 0px 0px 30px;
+}
+.footer-inf ul:last-child{
+	padding: 0px 0px 0px 250px;
+
+}
+.footer-inf ul:last-child li{
+text-align: right;
+}
+.footer-inf li:first-child{
+	font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 250%;
+}
+.footer-inf li{
+display: block;
+text-align: left;
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 220%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*полоса прокрутки контента*/
+.main::-webkit-scrollbar {
+  width: 12px;               /* ширина всей полосы прокрутки */
+}
+
+.main::-webkit-scrollbar-track {
+  background: #B1B1B1;        /* цвет зоны отслеживания */
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-color: black;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid #B1B1B1;  /* отступ вокруг бегунка */
+}
+/*-------контент каталог-------*/
+.main{
+	overflow-y: scroll;
+/*	position: absolute;*/
+
+/*	background-color: #C4C4C4;*/
+background-color: #D9D9D9;
+
+	min-height: 100vh;
+/*можно задать отступы, вроде лучше через падинг для шапки*/
+padding: 0px 0 0 0;
+/*	background-image: url('../img/1back.png'); //нужно будет заменить, не совпадают линии*/
+/*	background-color: lightcyan;*/
+	color: blue;
+/*	display: flex;*/
+	width: 1000px;
+margin: 0 auto;
+color: black;
+
+}
+
+
+.content{
+/*	overflow-y: scroll;*/
+/*	position: relative;*/
+	display: grid;
+	grid-template: repeat(6,335px) / repeat(3,333px);
+	justify-items: center;
+/*	align-items: center;*/
+/*	width: 1000px;
+margin: 0 auto;*/
+
+
+height: 100vh;
+	
+}
+/*чтобы картинка была ровно делаем значит так*/
+.size-image{
+width: 200px;
+height: 200px;
+transition: 1s;
+}
+.size-image:hover{
+	transform: scale(1.1);
+}
+.position-image{
+	overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.image-content{
+	min-width: 100%;
+	min-height: 100%;
+	
+/*	position: relative;*/
+}
+/*закончили с картинкой*/
+
+.text-content{
+/*	position: absolute;*/
+/*	font-size: 30px;*/
+	text-align: center;
+	
+}
+.price{
+	margin: 0 auto;
+	font-weight: 700;
+margin-top: 10px;
+margin-bottom: 10px;
+/*	text-align: center;*/
+}
+.cena{
+font-size: 25px;
+font-weight: 700;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.link-product{
+	text-decoration: none;
+	color: white;
+}
+.priobresti{
+/*	text-align: center;*/
+border: 2px solid black;
+border-radius: 20px;
+background-color: #3F3F3F;
+/*+тень*/
+color: white;
+width: 200px;
+padding: 10px;
+font-size: 20px;
+/*+увелечение при наведении*/
+text-align: center;
+transition: 1s;
+}
+.priobresti:hover{
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+.gain-center{
+  transition: 1s; /* Время эффекта */
+  text-align: center; 
+}
+.gain-center:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
