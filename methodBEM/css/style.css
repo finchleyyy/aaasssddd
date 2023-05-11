@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-.present-page2__button, .present-page1__button2, .present-page1__button1, .content-page1__button-zapis, .content-page1__button-choose, .nav__freetrain {
+.present-page3__button, .poisk-na-karte, .set__button, .present-page2__button, .present-page1__button2, .present-page1__button1, .content-page1__button-zapis, .content-page1__button-choose, .nav__freetrain {
   border: 1px solid #DF0001;
   border-radius: 15px;
   background-color: #DF0001;
@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav {
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 130px;
+  font-size: 120px;
   line-height: 116px;
   color: rgba(168, 161, 161, 0.53);
 }
@@ -374,10 +374,161 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 27px;
 }
 .present-page2__button {
-  margin-top: 20px;
   padding: 20px 60px;
+  margin-top: 20px;
+}
+
+.clubs {
+  min-height: 100vh;
+  background-color: black;
+  position: relative;
 }
 
 .all-club {
   min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  position: absolute;
+  top: 5%;
+  width: 76%;
+  left: 12%;
+  color: white;
+}
+.title__main-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+.title__secondary-title {
+  font-weight: 400;
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+.all-content {
+  position: absolute;
+  left: 12%;
+  display: grid;
+  grid-template: repeat(2, auto)/repeat(4, auto);
+  grid-gap: 1% 1%;
+  width: 76%;
+}
+
+.set {
+  display: block;
+  background-color: white;
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+}
+.set__card {
+  margin-left: 10px;
+}
+.set__position {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+.set__pic {
+  display: inline;
+}
+.set__name-place {
+  position: absolute;
+  display: inline;
+  top: 40%;
+  left: 25%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 18px;
+}
+.set__content {
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 15px;
+}
+.set__number {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 15px;
+}
+.set__button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000000;
+  border: 1px solid black;
+  margin: 20px 0 40px 20px;
+  padding: 5px 20px;
+}
+.set__button a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.poisk-na-karte {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  margin: 0 auto;
+  top: 90%;
+  left: 44%;
+}
+.poisk-na-karte a {
+  text-decoration: none;
+  color: white;
+}
+
+.present-page3 {
+  position: relative;
+  height: 100vh;
+  background-color: #F3F3F3;
+}
+.present-page3__titletwise {
+  position: absolute;
+  width: 76%;
+  top: 20px;
+  left: 12%;
+}
+.present-page3__content {
+  position: absolute;
+  top: 300px;
+  width: 30%;
+  right: 12%;
+}
+.present-page3__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 27px;
+  margin-bottom: 50px;
+}
+.present-page3__main-content {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 27px;
+}
+.present-page3__button {
+  padding: 20px 60px;
+  margin-top: 20px;
+}
+
+.present-page4 {
+  min-height: 100vh;
+  background-color: #DF0001;
 }

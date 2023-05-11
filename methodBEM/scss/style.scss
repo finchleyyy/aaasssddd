@@ -1,5 +1,6 @@
 @import "_zero";
-@import "slaydShow";
+@import "slaydShow";  //! не забыть вернуть 
+// @import "slaydShow-second";
 $main-color: #DF0001; //главный цвет
 // !создание шаблонов - записывается как обычный класс, но в начале ставится % (название любое)
 // !далее, чтобы его применить пишем @extend и название шаблона, например:
@@ -27,7 +28,7 @@ line-height: 19px;
 // !нужно заменить картинки соразмерными, настроить их 
 .nav {
     
-    z-index: 2;
+    z-index: 4;
 width: 100%;
 color: white;
 background-color: rgba(0, 0, 0, 0.5);
@@ -201,7 +202,7 @@ line-height: 24px;
         font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 130px;
+font-size: 120px;
 line-height: 116px;
 
 color: rgba(168, 161, 161, 0.53);
@@ -293,38 +294,269 @@ line-height: 27px;
     }
     &__button {
         // position: absolute;
-        margin-top: 20px;
+       
         @extend %button;
         padding: 20px 60px;
+        margin-top: 20px;
     }
+}
+// !вышла слишком не правильно по структуре и поэтому много лишнего
+.clubs{
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
 }
 .all-club {
     min-height: 100vh;
+    // background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    // line-height: 100px;
+    // &:last-child{
+    //     display: flex;
+    //     flex-direction: column;
+    //     // justify-content:center;
+    //     top: 100px;
+    // }
+ 
 }
-.set {
 
+.all-club:first-child{
+    // position: relative;
+//    display: block;
+//    flex-direction: none;
+//    justify-content: none;
+
+}
+.title {
+
+    position: absolute;
+    top: 5%;
+width: 76%;
+left: 12%;
+color: white;
+    &__main-title {
+        font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+    }
+
+    &__secondary-title {
+        font-weight: 400;
+        font-size: 19px;
+        margin-top: 10px;
+    }
+}
+
+.all-content{
+    position: absolute;
+    // text-align: center;
+    // float: 12%;
+    left: 12%;
+   display: grid;
+   grid-template: repeat(2,auto) / repeat(4,auto); 
+   grid-gap: 1% 1%;  // задаём отсутпы между колонками 
+
+   width: 76%;
+
+
+   
+}
+
+.set {
+    display: block;
+    background-color: white;
+    // background-color: red;
+    border-radius: 5%;
+    
+    
+// position: absolute; 
+// top: 100px;
+// left: 200px;
+width: 100%;
+height: 100%;
 		&__card {
+            margin-left: 10px;
+            // width: 60%;
+            // padding-right: -20px;
+            // border: 2px solid black;
+            // border-radius: 10%;
 		}
 
 		&__position {
+            position: relative;
+            display:block;
+            margin-bottom: 20px;
+            // margin-left: 20px;
+            
 		}
 
 		&__pic {
+            display: inline;
+    //         display: table-cell;
+    // vertical-align: middle;
 		}
 
 		&__name-place {
+            position: absolute;
+            display:inline;
+            top: 40%;
+            left: 25%;
+    //         display: table-cell;
+    // vertical-align: middle;
+    
+        
+            // margin-top: 5px;
+            // top: 50%;
+            // text-align: center;
+            font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 18px;
+            
 		}
 
 		&__content {
+            // display: inline-block;
+            margin-bottom: 20px;
+            // margin-left: 10px;
+            font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 15px;
 		}
 
-		&__nuber {
+		&__number {
+            // display: inline-block;
+            margin-bottom: 20px;
+            // margin-left: 10px;
+            font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 15px;
 		}
 
 		&__button {
+            @extend %button;
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0);
+            color: #000000;
+            border: 1px solid black;
+            margin: 20px 0 40px 20px;
+            padding: 5px 20px;
+            a{
+                text-decoration: none;
+                color: #000000;
+            }
 		}
+       
+      
 }
+.poisk-na-karte{
+    position: absolute;
+    z-index: 1;
+    @extend %button;
+    // vertical-align: text-bottom;
+    display: inline-block;
+    // vertical-align: center;
+    // flex-direction: column;
+    // justify-content: center;
+    // margin-top: 300px;
+    // text-align: center;
+    margin:0 auto;
+    // text-align: center;
+    top: 90%;
+    left: 44%;
+    // left:50%;
+// transform:translate(-90%, -44%);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // top: 700px;
+// +поднастроить кнопку по размерам
+// !здесь не правильно сделал, лучше закинуть это сразу после контента, а не отдельно на страницу
+// !и сделать как-то, чтобы после закидывания это не был элемент grid-контейнера
+a{
+    text-decoration: none;
+    color: white;
+}
+}
+// ! в будущем стоит найти другой подход к построению таких страниц
 
+
+
+
+.present-page3 {
+    position: relative;
+    height: 100vh;
+    background-color: #F3F3F3;
+    &__titletwise {
+        position: absolute;
+        width: 76%;
+        top: 20px;
+        left: 12%;
+    }
+
+    &__content {
+        position: absolute;
+        top: 300px;
+        width: 30%;
+        right: 12%;
+
+    }
+
+    &__title {
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 27px;
+margin-bottom: 50px;
+    }
+
+    &__main-content {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    &__button {
+        @extend %button;
+        padding: 20px 60px;
+        margin-top: 20px;
+    }
+}
+// я всё сломал...
+
+.present-page4 {
+min-height: 100vh;
+background-color: #DF0001;
+    &__all-blocks {
+    }
+
+    &__block {
+    }
+
+    &__block-pic {
+    }
+
+    &__block-content {
+    }
+
+    &__block-content-title {
+    }
+
+    &__block-content-text {
+    }
+}
 
 
 
