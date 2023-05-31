@@ -72,6 +72,239 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*----------------------------------------------------------*/
+.pr-content__main-button, .pr-button button, .present-clubcard__main-cards-block-buttons-register, .present-clubcard__main-installment, .present-clubcard__main-applicaton, .present-page4__button, .reklama-one__content-button, .present-page3__button, .poisk-na-karte, .present-page2__button, .present-page1__button2, .present-page1__button1, .content-page1__button-zapis, .content-page1__button-choose, .nav__freetrain {
+  border: 1px solid #DF0001;
+  border-radius: 15px;
+  background-color: #DF0001;
+  padding: 8px 15px;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.pr-content__main-button, .pr-button button, .present-clubcard__main-cards-block-buttons-register, .present-clubcard__main-installment, .present-clubcard__main-applicaton, .present-page4__button, .reklama-one__content-button, .present-page3__button, .poisk-na-karte, .present-page2__button, .present-page1__button2, .present-page1__button1, .content-page1__button-zapis, .content-page1__button-choose, .nav__freetrain {
+  border: 1px solid #DF0001;
+  border-radius: 15px;
+  background-color: #DF0001;
+  padding: 8px 15px;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+}
+
+.nav {
+  z-index: 4;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 66px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+}
+.nav__logo {
+  position: relative;
+  left: 12%;
+}
+.nav__logopic {
+  left: 12%;
+}
+.nav__link {
+  top: 20%;
+}
+.nav__vk {
+  position: absolute;
+  top: 20%;
+  display: inline-block;
+}
+.nav__telegram {
+  position: absolute;
+  left: 48%;
+  top: 20%;
+  display: inline-block;
+}
+.nav__number {
+  position: absolute;
+  left: 52%;
+  top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+.nav__freetrain {
+  position: absolute;
+  left: 65%;
+  top: 16%;
+}
+
+.first-fullscreen-page {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.7;
+}
+
+.menu {
+  position: absolute;
+  margin: 0 10%;
+  top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+}
+.menu__item {
+  margin: 0 2vw;
+  text-decoration: none;
+  color: white;
+}
+
+.content-page1 {
+  position: absolute;
+  top: 200px;
+  left: 12vw;
+}
+.content-page1__main {
+  width: 60%;
+  margin-bottom: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+.content-page1__secondary {
+  width: 60%;
+  margin-bottom: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.content-page1__button-choose {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: white;
+  margin-right: 20px;
+  border: solid 2px;
+  width: 150px;
+}
+.content-page1__button-choose:hover {
+  background-color: #DF0001;
+}
+.content-page1__button-zapis {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: white;
+  border: solid 2px;
+  width: 150px;
+}
+.content-page1__button-zapis:hover {
+  background-color: #DF0001;
+}
+.content-page1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.present-page1 {
+  background-color: #F3F3F3;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.present-page1__titletwise {
+  position: absolute;
+  width: 76%;
+  top: 20px;
+}
+.present-page1__back-text {
+  position: absolute;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 116px;
+  color: rgba(168, 161, 161, 0.53);
+}
+.present-page1__front-text {
+  position: absolute;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 39px;
+  color: #000000;
+  margin: 68px 0px 0px 5px;
+}
+.present-page1__picture {
+  position: absolute;
+  margin: 0 auto;
+  top: 180px;
+}
+.present-page1__img {
+  margin: 0 auto;
+  display: block;
+}
+.present-page1__button1 {
+  position: absolute;
+  display: block;
+  top: 520px;
+}
+.present-page1__button1 a {
+  color: white;
+}
+.present-page1__button2 {
+  position: absolute;
+  display: block;
+  top: 600px;
+}
+.present-page1__bottom-line {
+  position: absolute;
+  width: 800px;
+  top: 670px;
+  border-bottom: 1px solid #D1CDCD;
+}
+
 .container {
   position: absolute;
   width: 33%;
@@ -151,196 +384,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-.present-page3__button, .poisk-na-karte, .set__button, .present-page2__button, .present-page1__button2, .present-page1__button1, .content-page1__button-zapis, .content-page1__button-choose, .nav__freetrain {
-  border: 1px solid #DF0001;
-  border-radius: 15px;
-  background-color: #DF0001;
-  padding: 8px 15px;
-  color: white;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 19px;
-}
-
-.wrapper {
-  width: 100%;
-}
-
-.nav {
-  z-index: 4;
-  width: 100%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 7vh;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-}
-.nav__logopic {
-  position: absolute;
-  left: 12%;
-  top: 15%;
-}
-.nav__logoname {
-  position: absolute;
-  left: 15%;
-  top: 45%;
-  display: inline-block;
-}
-.nav__vk {
-  position: absolute;
-  left: 45%;
-  top: 10%;
-  display: inline-block;
-}
-.nav__telegram {
-  left: 48%;
-  top: 15%;
-  position: absolute;
-  display: inline-block;
-}
-.nav__number {
-  position: absolute;
-  left: 52%;
-  top: 12%;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-}
-.nav__freetrain {
-  position: absolute;
-  left: 65%;
-  top: 8%;
-}
-
-.first-fullscreen-page {
-  position: relative;
-  height: 100vh;
-  background-image: url(../img/picPAGE/back.jpg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  color: white;
-}
-
-.menu {
-  position: absolute;
-  margin: 0 10%;
-  top: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 18px;
-}
-.menu__item {
-  margin: 0 2vw;
-  text-decoration: none;
-  color: white;
-}
-
-.content-page1 {
-  position: absolute;
-  top: 200px;
-  left: 12vw;
-}
-.content-page1__main {
-  width: 60%;
-  margin-bottom: 100px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-}
-.content-page1__secondary {
-  width: 60%;
-  margin-bottom: 100px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
-.content-page1__button-choose {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: white;
-  margin-right: 20px;
-  border: solid 2px;
-  width: 150px;
-}
-.content-page1__button-zapis {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: white;
-  border: solid 2px;
-  width: 150px;
-}
-
-.present-page1 {
-  background-color: #F3F3F3;
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.present-page1__titletwise {
-  position: absolute;
-  width: 76%;
-  top: 20px;
-}
-.present-page1__back-text {
-  position: absolute;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 120px;
-  line-height: 116px;
-  color: rgba(168, 161, 161, 0.53);
-}
-.present-page1__front-text {
-  position: absolute;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 39px;
-  color: #000000;
-  margin: 68px 0px 0px 5px;
-}
-.present-page1__picture {
-  position: absolute;
-  margin: 0 auto;
-  top: 180px;
-}
-.present-page1__img {
-  margin: 0 auto;
-  display: block;
-}
-.present-page1__button1 {
-  position: absolute;
-  display: block;
-  top: 520px;
-}
-.present-page1__button2 {
-  position: absolute;
-  display: block;
-  top: 600px;
-}
-.present-page1__bottom-line {
-  position: absolute;
-  width: 800px;
-  top: 670px;
-  border-bottom: 1px solid #D1CDCD;
-}
-
 .present-page2 {
   position: relative;
   height: 100vh;
@@ -383,6 +426,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: black;
   position: relative;
 }
+.clubs__back {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
 
 .all-club {
   min-height: 100vh;
@@ -415,8 +464,9 @@ h1, h2, h3, h4, h5, h6 {
   left: 12%;
   display: grid;
   grid-template: repeat(2, auto)/repeat(4, auto);
-  grid-gap: 1% 1%;
+  grid-gap: 2% 1%;
   width: 76%;
+  top: 140px;
 }
 
 .set {
@@ -441,7 +491,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   display: inline;
   top: 40%;
-  left: 25%;
+  left: 23%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -455,6 +505,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-size: 17px;
   line-height: 15px;
+}
+.set__content p {
+  margin-top: 5px;
 }
 .set__number {
   margin-bottom: 20px;
@@ -470,8 +523,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0, 0, 0, 0);
   color: #000000;
   border: 1px solid black;
-  margin: 20px 0 40px 20px;
+  margin: 20px 0 40px 0px;
   padding: 5px 20px;
+  font-size: 16px;
 }
 .set__button a {
   text-decoration: none;
@@ -528,7 +582,638 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
 }
 
+.reklama-one {
+  width: 100%;
+  height: 370px;
+  background-color: #000000;
+  position: relative;
+}
+.reklama-one__content {
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px rgba(255, 250, 250, 0.8) solid;
+  padding-left: 20px;
+  left: 12%;
+  color: white;
+}
+.reklama-one__content-title {
+  margin-top: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+}
+.reklama-one__content-title span {
+  color: #DF0001;
+}
+.reklama-one__content-button {
+  margin-top: 40px;
+  font-size: 17px;
+}
+.reklama-one__content-conditions {
+  margin-top: 40px;
+  color: rgba(255, 250, 250, 0.8);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+}
+.reklama-one__content-conditions p {
+  margin: 5px 0 5px 0;
+}
+.reklama-one__image {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
 .present-page4 {
   min-height: 100vh;
+  background-color: #F3F3F3;
+  position: relative;
+}
+.present-page4__all-blocks {
+  position: absolute;
+  top: 140px;
+  width: 76%;
+  left: 12%;
+  display: grid;
+  grid-template: repeat(3, auto)/repeat(2, auto);
+  grid-gap: 4% 5%;
+}
+.present-page4__block {
+  position: relative;
+}
+.present-page4__block-pic {
+  float: left;
+  width: 150px;
+}
+.present-page4__block-content {
+  position: absolute;
+  display: inline;
+  margin-left: 20px;
+  margin-right: 100px;
+}
+.present-page4__block-content-title {
+  color: black;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+}
+.present-page4__block-content-text {
+  margin-bottom: 45px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.present-page4__button {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 700px;
+}
+
+.present-page5 {
+  height: 100vh;
+  position: relative;
+  background-color: #F3F3F3;
+}
+.present-page5__main {
+  position: absolute;
+  left: 12%;
+  width: 76%;
+}
+.present-page5__content {
+  margin-top: 130px;
+  width: 100%;
+  display: grid;
+  grid-template: repeat(4, auto)/repeat(3, 350px);
+  grid-gap: 2% 1%;
+}
+.present-page5__content-block {
+  width: 350px;
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+}
+.present-page5__content-block-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.present-page5__content-block-img img {
+  width: 100%;
+  filter: brightness(60%);
+}
+.present-page5__content-block-img img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.present-page5__content-block-img-text {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+}
+.present-page5__content-block-img-text div {
+  display: inline-block;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.present-clubcard {
+  height: 115vh;
+  position: relative;
+}
+.present-clubcard__main {
+  position: absolute;
+  left: 12%;
+  width: 76%;
+  display: flex;
+  flex-direction: column;
+}
+.present-clubcard__main-text {
+  margin-top: 150px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.present-clubcard__main-applicaton {
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 200px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.present-clubcard__main-installment {
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 200px;
+  background-color: #FFDD2D;
+  color: #000000;
+  border-color: #FFDD2D;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.present-clubcard__main-cards {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+.present-clubcard__main-cards-block {
+  background-color: #F3F3F3;
+  border: 1px #F3F3F3 solid;
+  border-radius: 10px;
+}
+.present-clubcard__main-cards-block:hover {
+  /* Свойство отвечающее за формирование тени 
+   8px - отступ по оси Х
+   10px - отступ по оси Y
+   5px - радиус размытия тения
+   2px - радиус распространения
+   rgba - функция формирующая цвет тени
+  */
+  box-shadow: 8px 10px 5px 2px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+  transition: 1s;
+}
+.present-clubcard__main-cards-block-inf {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+}
+.present-clubcard__main-cards-block-cost {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.52);
+}
+.present-clubcard__main-cards-block-buttons {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.present-clubcard__main-cards-block-buttons-register {
+  margin: 0 2px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.present-clubcard__main-cards-block-buttons-detail {
+  margin: 0 2px;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  position: relative;
+}
+
+.footer-page {
+  position: absolute;
+  color: white;
+  left: 12%;
+  width: 76%;
+  height: 100%;
+}
+.footer-page__name-politic a {
+  color: white;
+}
+.footer-page__name-politic-politic {
+  margin-top: 50px;
+}
+.footer-page__name-politic-politic p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.54);
+}
+.footer-page__inf {
+  position: absolute;
+  right: 1%;
+  margin-left: auto;
+  margin-top: -130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+}
+.footer-page__inf-menu {
+  display: inline-block;
+}
+.footer-page__inf-menu li {
+  color: white;
+}
+.footer-page__inf-menu li a {
+  color: white;
+}
+.footer-page__inf-menu li:first-child {
+  color: #DF0001;
+}
+.footer-page__inf-clubs {
+  margin-left: 40px;
+  display: inline-block;
+}
+.footer-page__inf-clubs li:first-child {
+  color: #DF0001;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.footer-page__inf-clubs li a {
+  color: white;
+}
+.footer-page__middle {
+  bottom: 0;
+  margin-bottom: 50px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.footer-page__middle-first {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footer-page__middle-first-text {
+  margin-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.54);
+}
+.footer-page__middle-second {
+  text-align: center;
+}
+.popup-bg {
+  z-index: 5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.popup-bg img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+}
+
+.forms {
+  position: absolute;
+  width: 33%;
+  height: 500px;
+  background-color: white;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 30%);
+  display: flex;
+  flex-direction: column;
+}
+.forms__connect {
+  text-align: center;
+  width: 70%;
+  display: inline-block;
+  margin: 20px auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+.forms__block {
+  display: inline-block;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.forms__block-input {
+  border: 1px solid #D1CDCD;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.forms__zapis {
+  width: 70%;
+  margin: 0 auto;
+}
+.forms__zapis-button {
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  border: 1px solid #DF0001;
+  border-radius: 10px;
+  color: white;
   background-color: #DF0001;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+.forms__politic {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.forms__politic span {
+  margin-top: 5px;
+  display: block;
+  color: #DF0001;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.popup-map {
+  z-index: 5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.popup-map img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+}
+.popup-map__container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-map__container-content {
+  width: 350px;
+  height: 350px;
+}
+.popup-map__container-content iframe {
+  width: 100%;
+  height: 100%;
+}
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*----------------------------------------------------------*/
+.pr-content__main-button, .pr-button button, .nav__freetrain, .content-page1__button-choose, .content-page1__button-zapis, .present-page1__button1, .present-page1__button2, .present-page2__button, .poisk-na-karte, .present-page3__button, .reklama-one__content-button, .present-page4__button, .present-clubcard__main-applicaton, .present-clubcard__main-installment, .present-clubcard__main-cards-block-buttons-register {
+  border: 1px solid #DF0001;
+  border-radius: 15px;
+  background-color: #DF0001;
+  padding: 8px 15px;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.promo-header {
+  background-color: #F3F3F3;
+  height: 100%;
+}
+.promo-header__block-menu {
+  display: flex;
+  justify-content: center;
+}
+.promo-header__menu a {
+  color: black;
+  font-size: 13px;
+  margin: 0 15px;
+}
+.event {
+  margin-top: 150px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+}
+
+.pr-button {
+  width: 150px;
+  margin: 50px auto;
+}
+.pr-button button a {
+  color: white;
+}
+
+.pr-content-page {
+  margin: 50px 0;
+  width: 100%;
+}
+
+.pr-content {
+  background-color: white;
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid white;
+  /* Свойство отвечающее за формирование тени 
+  1 8px - отступ по оси Х
+  2 10px - отступ по оси Y
+  3 5px - радиус размытия тения
+  4 2px - радиус распространения
+   rgba - функция формирующая цвет тени
+  */
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+}
+.pr-content img {
+  margin-top: 30px;
+  width: 100%;
+}
+.pr-content__main {
+  width: 750px;
+  margin: 0 auto;
+}
+.pr-content__main-event {
+  margin: 30px 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+}
+.pr-content__main-inf {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 30px 0px;
+}
+.pr-content__main-button {
+  margin-bottom: 30px;
 }

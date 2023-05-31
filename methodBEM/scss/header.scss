@@ -1,0 +1,102 @@
+$main-color: #DF0001;
+%button{ 
+    
+    border: 1px solid $main-color;
+    border-radius: 15px;
+    background-color: $main-color;
+    padding: 8px 15px;
+    color: white;
+    // --------------
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 19px;
+}
+
+.nav {
+    // position: relative;
+    z-index: 4;
+width: 100%;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+height: 66px;
+// opacity: 0.6;
+position: fixed;
+display: flex;
+flex-direction: row;
+// line-height: 50px;
+    &__logo{
+position: relative;
+left: 12%;
+// top: 20%;
+// vertical-align: center;
+// width: 20%;
+// height: 100%;
+}
+    &__logopic {
+        // position: absolute;
+    left: 12%;
+    // top: 15%;
+    // vertical-align: center;
+ 
+    } 
+//     &__logoname {
+//         position: absolute;
+//         left: 13%;
+//         // margin: -5px 0px 0px 250px; 
+//         top: 35%;
+//         display: inline-block;
+//         // но лучше сделать отступы к центру через что-то другое
+// //  ! удалил этот элемент, сделал под соответствие футеру
+//     }
+&__link{
+
+top: 20%;
+// text-align: center;
+}
+    &__vk {
+        position: absolute;
+        // left: 45%; 
+        top: 20%;
+        // padding-left: -300px;
+        display: inline-block;
+    }
+
+    &__telegram {
+        
+        position: absolute;
+        left: 48%; 
+        top: 20%;
+       
+    display: inline-block;
+
+    }
+
+
+    &__number {
+        // display: inline-block; /* центрировать..*/
+        // vertical-align: middle;  /* ..по вертикали */
+        // line-height: 1; /* переопределить высоту строки на обычную */
+        // border: 1px solid bisque;
+        position: absolute;
+        left: 52%;
+        top: 20px;
+        // -------------
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        // line-height: 24px;
+        }
+
+    &__freetrain {
+@extend %button;
+        position: absolute;
+        left:65%;
+        top: 16%;
+      
+        
+    }
+  
+}
